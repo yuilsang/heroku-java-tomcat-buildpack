@@ -1,4 +1,4 @@
-Heroku Java + Tomcat BuildPack
+Heroku Java + Tomcat + NodeJS + PhantomJS BuildPack
 ------------------------------
 A simple modification to https://github.com/heroku/heroku-buildpack-java to download and include Tomcat 7 in a your build directory at /tomcat. You can then use the Maven AntRun plugin to overwrite any files configuration files and launch the project as necessary. See https://gist.github.com/4575349 or below for an example build configuration.
 
