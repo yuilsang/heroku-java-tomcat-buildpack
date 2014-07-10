@@ -176,12 +176,13 @@ echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/phantomjs/lib"' >> $PROFIL
 
 # font
 mkdir .fonts
+if [ -d $BUILD_DIR/vendor/fonts ]; then
 cp $BUILD_DIR/vendor/fonts/* .fonts
 
 # refresh font-cache
 # target: .fonts
 fc-cache -v .fonts
-
+fi
 ########## PHANTOM.JS STUFF ENDS ##########
 
 
